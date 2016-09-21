@@ -16,6 +16,7 @@ import AppCore from './core';
 import { AppComponent } from './app.component';
 import Home from './components/home';
 import sideBar from "./components/sideBar"
+import aboutUs from "./components/aboutUs"
 
 import 'angular-material/angular-material.css'
 const appName = 'myApp';
@@ -34,7 +35,8 @@ angular.module(appName, [
 
   // ui-components
   Home,
-  sideBar
+  sideBar,
+  aboutUs
 ])
 .config(config)
 .component(AppComponent.selector, AppComponent);

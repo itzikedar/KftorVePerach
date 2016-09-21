@@ -1,0 +1,19 @@
+<div layout="row" layout="column" layout-padding>
+    <div flex="40" layout="row" layout="column">
+        <div class="aboutUsImage" flex="80"></div>
+        <div class="aboutUsAnimatedGif" flex="20">
+            <img ng-mouseenter="showText = true" ng-mouseleave="showText = false" src="./images/image1.jpg">
+            <div ng-if="showText">{{$ctrl.texts.hover_text}}</div>
+        </div>
+    </div>
+    <div flex="60">
+        <div layout="row" layout="column">
+            <div flex="80">
+                {{::$ctrl.texts.text}}
+            </div>
+            <div flex="20">
+                {{::$ctrl.texts.title}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+@import url(../../css/core/global.less);
+
+@media (min-width: 320px) {
+	.aboutUs {
+
+	}
+}
+
+@media (min-width: 768px) {
+	.aboutUs {
+
+	}
+}
+
+about-us{
+  display: block;
+  width:90%;
+  margin:auto;
+  height:100%;
+  padding-top:80px;
+  .aboutUsImage{
+    background-image:url(./images/image1.jpg) ;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    height:300px;
+  }
+  .aboutUsAnimatedGif{
+    width: 80%;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    &>img{
+      width:40px;
+    }
+    &>div{
+      width:40px;
+      height:60px;
+    }
+  }
+}
