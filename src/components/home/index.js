@@ -2,14 +2,12 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import AppCore from '../../core';
 import { HomeComponent } from './home.component';
-import imagesGrid from "../imagesGrid"
 
 export * from './home.component';
 
 export default angular.module('home', [
   AppCore,
-  uiRouter,
-  imagesGrid
+  uiRouter
 ])
   .config(config)
   .component(HomeComponent.selector, HomeComponent)

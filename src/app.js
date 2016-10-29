@@ -15,7 +15,6 @@ import LocalStorageModule from 'angular-local-storage';
 import AppCore from './core';
 import { AppComponent } from './app.component';
 import Home from './components/home';
-import sideBar from "./components/sideBar"
 
 import 'angular-material/angular-material.css'
 const appName = 'myApp';
@@ -33,8 +32,7 @@ angular.module(appName, [
   AppCore,
 
   // ui-components
-  Home,
-  sideBar
+  Home
 ])
 .config(config)
 .component(AppComponent.selector, AppComponent);

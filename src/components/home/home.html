@@ -1,1 +1,16 @@
-<images-grid></images-grid>
+<div>Some angular metirial inputs:</div>
+
+<md-input-container>
+    <label>Regular input</label>
+    <input ng-model="form.input">
+</md-input-container>
+
+<md-input-container>
+    <label>Select element</label>
+    <md-select ng-model="form.select">
+        <md-option><em>None</em></md-option>
+        <md-option ng-repeat="state in [1,2,3,4,5]">
+            {{$index}}
+        </md-option>
+    </md-select>
+</md-input-container>
